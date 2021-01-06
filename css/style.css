@@ -1,0 +1,33 @@
+.row {
+  max-width: 90vw;
+  margin: 0 auto;
+  margin-bottom: 6rem;
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.row [class^=col-] {
+  float: left;
+}
+
+.row [class^=col-]:not(:last-child) {
+  margin-right: 4rem;
+}
+
+.row .col-1-of-1 {
+  width: 100%;
+}
+
+.row .col-1-of-2 {
+  width: calc((100% - 4rem) / 2);
+}
+
+.row .col-1-of-3 {
+  width: calc((100% - 4rem*2) / 3);
+}
+
+.row .col-1-of-4 {
+  width: calc((100% - 4rem*3) / 4);
+}
+/*# sourceMappingURL=style.css.map */
