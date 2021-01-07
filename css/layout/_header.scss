@@ -1,0 +1,26 @@
+.header {
+    height: 100vh;
+    background-image: linear-gradient(to right top, rgba(92, 128, 188, .6),  rgba(8, 65, 92, .6)), url(/img/home.jpg);
+    background-size: cover;
+    background-position: bottom;
+    background-attachment: fixed;
+    position: relative;
+
+    &__logo-box {
+        position: absolute;
+        top: 3rem;
+        left: 3rem;
+
+        &--img {
+            height: 10rem;
+        }
+    }
+
+    &__text-box {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+    }
+}
