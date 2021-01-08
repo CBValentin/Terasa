@@ -16,12 +16,17 @@ body {
     &__main {
         font-size: 20rem;
         color: $color-whitePlatinum;
+
+        animation: moveInBottomMain 1s ease-in-out;
     }
 
     &__sub {
         text-transform: uppercase;
         font-size: 4rem;
         color: $color-greyLight;
+
+        animation: moveInBottomMain 1s ease-in-out .2s;
+        animation-fill-mode: backwards;
     }
 }
 
@@ -30,8 +35,21 @@ body {
     letter-spacing: .5rem;
     font-weight: 400;
 
+    margin-top: 8rem;
+
     @include text-color-clip;
 
     text-align: center;
+}
 
+.heading-tertiary {
+    font-weight: 700;
+    font-size: 2.8rem;
+    color: $color-blackChocolate;
+    margin-bottom: 1rem;
+}
+
+.paragraph {
+    font-weight: 400;
+    font-size: 1.6rem;
 }
