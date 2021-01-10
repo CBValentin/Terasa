@@ -85,3 +85,45 @@
         box-shadow: 0 .1rem .6rem rgba($color-blackChocolate, .4);
     }
 }
+
+.button-card {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 2.5rem;
+    padding: 1.5rem 3.5rem;
+    cursor: pointer;
+    border-radius: 1rem;
+
+    transition: all .25s ease;
+
+    &__b1{
+    border: solid 2px $color-whiteCultured;
+    color: $color-whiteCultured;
+    box-shadow: 0 2rem 4rem rgba($color-blackChocolate, .4);
+        &:hover {
+            background-color: $color-whiteCultured;
+            color: $color-blueIndigo;
+            box-shadow: 0 4rem 6rem rgba($color-blackChocolate, .4);
+        }
+    }
+    &__b2{
+        border: solid 2px $color-whiteCultured;
+        color: $color-whiteCultured;
+        box-shadow: 0 2rem 4rem rgba($color-blackChocolate, .4);
+            &:hover {
+                background-color: $color-whiteCultured;
+                color: $color-secondary-dark;
+                box-shadow: 0 4rem 6rem rgba($color-blackChocolate, .4);
+            }
+    }
+    &__b3{
+        border: solid 2px $color-whiteCultured;
+        color: $color-whiteCultured;
+        box-shadow: 0 2rem 4rem rgba($color-blackChocolate, .4);
+            &:hover {
+                background-color: $color-whiteCultured;
+                color: $color-tertiary-dark;
+                box-shadow: 0 4rem 6rem rgba($color-blackChocolate, .4);
+            }
+    }
+}

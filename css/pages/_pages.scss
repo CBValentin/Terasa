@@ -1,4 +1,14 @@
 .section-about {
-    min-height: 70vh;
     background-color: $color-whiteCultured;
+}
+
+.section-features {
+    background-image: linear-gradient(to right top, rgba(92, 128, 188, .6),  rgba(8, 65, 92, .6)), url(/img/features.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.section-cards {
+    min-height: 100vh;
 }
