@@ -13,15 +13,17 @@
 
     &__side {
         height: 55rem;
-        transition: all 1s ease;
+        transition: all .70s ease;
 
         width: 100%;
 
         position: absolute;
 
-        border-radius: 3px;
+        border-radius: 4px;
         box-shadow: 0 2rem 6rem rgba($color-blackChocolate, .4);
         backface-visibility: hidden;
+
+        overflow: hidden;
 
         &--back {
             transform: rotateY(180deg);
@@ -49,26 +51,28 @@
 
     //--- FRONT DESIGN ---//
 
-
+    
 
     &__image {
         height: 45%;
-        width: 100%;
+        max-width: 100%;
 
         background-size: cover;
         background-position: center;
+
+        background-blend-mode: screen;
 
         -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
         clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
         
         &-p1 {
-            background-image: linear-gradient(to right top, rgba($color-blueGlaucous, .6), rgba($color-blueIndigo, .6)), url(/img/card1.jpg);
+            background-image: linear-gradient(to right top, $color-blueGlaucous, $color-blueIndigo), url(/img/card1.jpg);
         }
         &-p2 {
-            background-image: linear-gradient(to right top, rgba($color-secondary-light, .6), rgba($color-secondary-dark, .6)), url(/img/card2.jpg);
+            background-image: linear-gradient(to right top, $color-secondary-light, $color-secondary-dark), url(/img/card2.jpg);
         }
         &-p3 {
-            background-image: linear-gradient(to right top, rgba($color-tertiary-light, .6), rgba($color-tertiary-dark, .6)), url(/img/card3.jpg);
+            background-image: linear-gradient(to right top, $color-tertiary-light, $color-tertiary-dark), url(/img/card3.jpg);
         }
         
     }

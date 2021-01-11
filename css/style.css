@@ -184,23 +184,26 @@ body {
   text-decoration: none;
   text-transform: uppercase;
   font-size: 2.5rem;
-  color: #dbd9d9;
   padding: 1.5rem 3.5rem;
   border-radius: 1rem;
-  border: solid 2px #08415c;
-  background-color: #08415c;
   letter-spacing: .35rem;
   cursor: pointer;
   display: inline-block;
   -webkit-transition: all .35s ease;
   transition: all .35s ease;
+}
+
+.button-main__home {
+  color: #dbd9d9;
+  border: solid 2px #08415c;
+  background-color: #08415c;
   -webkit-animation: moveInTop 1s ease-in-out .9s;
           animation: moveInTop 1s ease-in-out .9s;
   -webkit-animation-fill-mode: backwards;
           animation-fill-mode: backwards;
 }
 
-.button-main:hover {
+.button-main__home:hover {
   background-color: #dbd9d9;
   color: #08415c;
   border: solid 2px #dbd9d9;
@@ -210,7 +213,33 @@ body {
           box-shadow: 0 4px 20px rgba(29, 30, 24, 0.6);
 }
 
-.button-main:active {
+.button-main__home:active {
+  background-color: #dbd9d9;
+  border: solid 2px #dbd9d9;
+  -webkit-transform: translateY(-0.1rem) translateX(-0.2rem);
+          transform: translateY(-0.1rem) translateX(-0.2rem);
+  -webkit-box-shadow: 0 2px 10px rgba(29, 30, 24, 0.4);
+          box-shadow: 0 2px 10px rgba(29, 30, 24, 0.4);
+}
+
+.button-main__cards {
+  color: white;
+  background-color: #5c80bc;
+  border: solid 2px #5c80bc;
+  margin-bottom: 8rem;
+}
+
+.button-main__cards:hover {
+  background-color: white;
+  color: #5c80bc;
+  border: solid 2px white;
+  -webkit-transform: translateY(-0.2rem) translateX(-0.4rem);
+          transform: translateY(-0.2rem) translateX(-0.4rem);
+  -webkit-box-shadow: 0 4px 20px rgba(29, 30, 24, 0.6);
+          box-shadow: 0 4px 20px rgba(29, 30, 24, 0.6);
+}
+
+.button-main__cards:active {
   background-color: #dbd9d9;
   border: solid 2px #dbd9d9;
   -webkit-transform: translateY(-0.1rem) translateX(-0.2rem);
@@ -240,10 +269,8 @@ body {
   cursor: pointer;
   text-decoration: none;
   border-bottom: solid 1px #08415c;
-  font-size: 1.6rem;
   display: inline-block;
   color: #08415c;
-  padding: .2rem .4rem .2rem;
   border-radius: 2px;
   -webkit-transition: all .25s ease-in-out;
   transition: all .25s ease-in-out;
@@ -251,6 +278,14 @@ body {
 
 .button-sub__about {
   margin-top: 3rem;
+  font-size: 1.6rem;
+  padding: .2rem .4rem .2rem;
+}
+
+.button-sub__testimonial {
+  margin-bottom: 5rem;
+  font-size: 2.5rem;
+  padding: .5rem 1.2rem .4rem;
 }
 
 .button-sub:hover {
@@ -271,57 +306,37 @@ body {
           box-shadow: 0 0.1rem 0.6rem rgba(29, 30, 24, 0.4);
 }
 
-.button-card {
+.button-card:link, .button-card:visited {
   text-decoration: none;
   text-transform: uppercase;
   font-size: 2.5rem;
   padding: 1.5rem 3.5rem;
   cursor: pointer;
   border-radius: 1rem;
+  border: solid 2px #EDF2EF;
+  color: #EDF2EF;
+  -webkit-box-shadow: 0 2rem 4rem rgba(29, 30, 24, 0.4);
+          box-shadow: 0 2rem 4rem rgba(29, 30, 24, 0.4);
   -webkit-transition: all .25s ease;
   transition: all .25s ease;
 }
 
-.button-card__b1 {
-  border: solid 2px #EDF2EF;
-  color: #EDF2EF;
-  -webkit-box-shadow: 0 2rem 4rem rgba(29, 30, 24, 0.4);
-          box-shadow: 0 2rem 4rem rgba(29, 30, 24, 0.4);
+.button-card:hover {
+  background-color: #EDF2EF;
+  -webkit-box-shadow: 0 4rem 6rem rgba(29, 30, 24, 0.4);
+          box-shadow: 0 4rem 6rem rgba(29, 30, 24, 0.4);
 }
 
 .button-card__b1:hover {
-  background-color: #EDF2EF;
   color: #08415c;
-  -webkit-box-shadow: 0 4rem 6rem rgba(29, 30, 24, 0.4);
-          box-shadow: 0 4rem 6rem rgba(29, 30, 24, 0.4);
-}
-
-.button-card__b2 {
-  border: solid 2px #EDF2EF;
-  color: #EDF2EF;
-  -webkit-box-shadow: 0 2rem 4rem rgba(29, 30, 24, 0.4);
-          box-shadow: 0 2rem 4rem rgba(29, 30, 24, 0.4);
 }
 
 .button-card__b2:hover {
-  background-color: #EDF2EF;
   color: #ff7730;
-  -webkit-box-shadow: 0 4rem 6rem rgba(29, 30, 24, 0.4);
-          box-shadow: 0 4rem 6rem rgba(29, 30, 24, 0.4);
-}
-
-.button-card__b3 {
-  border: solid 2px #EDF2EF;
-  color: #EDF2EF;
-  -webkit-box-shadow: 0 2rem 4rem rgba(29, 30, 24, 0.4);
-          box-shadow: 0 2rem 4rem rgba(29, 30, 24, 0.4);
 }
 
 .button-card__b3:hover {
-  background-color: #EDF2EF;
   color: #5643fa;
-  -webkit-box-shadow: 0 4rem 6rem rgba(29, 30, 24, 0.4);
-          box-shadow: 0 4rem 6rem rgba(29, 30, 24, 0.4);
 }
 
 .composition {
@@ -426,15 +441,16 @@ body {
 
 .card__side {
   height: 55rem;
-  -webkit-transition: all 1s ease;
-  transition: all 1s ease;
+  -webkit-transition: all .70s ease;
+  transition: all .70s ease;
   width: 100%;
   position: absolute;
-  border-radius: 3px;
+  border-radius: 4px;
   -webkit-box-shadow: 0 2rem 6rem rgba(29, 30, 24, 0.4);
           box-shadow: 0 2rem 6rem rgba(29, 30, 24, 0.4);
   -webkit-backface-visibility: hidden;
           backface-visibility: hidden;
+  overflow: hidden;
 }
 
 .card__side--back {
@@ -469,26 +485,27 @@ body {
 
 .card__image {
   height: 45%;
-  width: 100%;
+  max-width: 100%;
   background-size: cover;
   background-position: center;
+  background-blend-mode: screen;
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
   clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
 }
 
 .card__image-p1 {
-  background-image: -webkit-gradient(linear, left bottom, right top, from(rgba(92, 128, 188, 0.6)), to(rgba(8, 65, 92, 0.6))), url(/img/card1.jpg);
-  background-image: linear-gradient(to right top, rgba(92, 128, 188, 0.6), rgba(8, 65, 92, 0.6)), url(/img/card1.jpg);
+  background-image: -webkit-gradient(linear, left bottom, right top, from(#5c80bc), to(#08415c)), url(/img/card1.jpg);
+  background-image: linear-gradient(to right top, #5c80bc, #08415c), url(/img/card1.jpg);
 }
 
 .card__image-p2 {
-  background-image: -webkit-gradient(linear, left bottom, right top, from(rgba(255, 185, 0, 0.6)), to(rgba(255, 119, 48, 0.6))), url(/img/card2.jpg);
-  background-image: linear-gradient(to right top, rgba(255, 185, 0, 0.6), rgba(255, 119, 48, 0.6)), url(/img/card2.jpg);
+  background-image: -webkit-gradient(linear, left bottom, right top, from(#ffb900), to(#ff7730)), url(/img/card2.jpg);
+  background-image: linear-gradient(to right top, #ffb900, #ff7730), url(/img/card2.jpg);
 }
 
 .card__image-p3 {
-  background-image: -webkit-gradient(linear, left bottom, right top, from(rgba(41, 152, 255, 0.6)), to(rgba(86, 67, 250, 0.6))), url(/img/card3.jpg);
-  background-image: linear-gradient(to right top, rgba(41, 152, 255, 0.6), rgba(86, 67, 250, 0.6)), url(/img/card3.jpg);
+  background-image: -webkit-gradient(linear, left bottom, right top, from(#2998ff), to(#5643fa)), url(/img/card3.jpg);
+  background-image: linear-gradient(to right top, #2998ff, #5643fa), url(/img/card3.jpg);
 }
 
 .card__list {
@@ -566,6 +583,51 @@ body {
   font-size: 3rem;
 }
 
+.testimonial {
+  width: 70%;
+  margin: 0 auto 6rem;
+  background-image: -webkit-gradient(linear, left bottom, right top, from(rgba(237, 242, 239, 0.85)), to(rgba(227, 227, 227, 0.85)));
+  background-image: linear-gradient(to right top, rgba(237, 242, 239, 0.85), rgba(227, 227, 227, 0.85));
+  -webkit-box-shadow: 0 3rem 6rem rgba(29, 30, 24, 0.4);
+          box-shadow: 0 3rem 6rem rgba(29, 30, 24, 0.4);
+  padding: 6rem;
+  min-height: 28rem;
+  border-radius: 3px;
+  -webkit-transform: skew(-12deg);
+          transform: skew(-12deg);
+}
+
+.testimonial > * {
+  -webkit-transform: skew(12deg);
+          transform: skew(12deg);
+}
+
+.testimonial__shape {
+  width: 16rem;
+  height: 16rem;
+  float: left;
+  -webkit-clip-path: circle(50% at 50% 50%);
+          clip-path: circle(50% at 50% 50%);
+  shape-outside: circle(50% at 50% 50%);
+  -webkit-transform: translateX(-2rem) skew(12deg);
+          transform: translateX(-2rem) skew(12deg);
+}
+
+.testimonial__image {
+  height: 100%;
+  -webkit-transform: translateX(-4rem);
+          transform: translateX(-4rem);
+}
+
+.testimonial__caption {
+  text-align: center;
+}
+
+.testimonial__text {
+  padding-top: 1rem;
+  line-height: 1.7;
+}
+
 .section-about {
   background-color: #EDF2EF;
 }
@@ -580,6 +642,27 @@ body {
 
 .section-cards {
   min-height: 100vh;
+}
+
+.section-testimonials {
+  min-height: 100vh;
+  width: 100%;
+  position: relative;
+  background-image: -webkit-gradient(linear, left bottom, right top, from(rgba(237, 242, 239, 0.6)), to(rgba(227, 227, 227, 0.6)));
+  background-image: linear-gradient(to right top, rgba(237, 242, 239, 0.6), rgba(227, 227, 227, 0.6));
+}
+
+#myVideo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
 }
 
 .row {

@@ -12,3 +12,23 @@
 .section-cards {
     min-height: 100vh;
 }
+
+.section-testimonials {
+    min-height: 100vh;
+    width: 100%;
+
+    position: relative;
+
+    background-image: linear-gradient(to right top, rgba($color-whiteCultured, .6), rgba($color-whitePlatinum, .6));
+}
+#myVideo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+
+    object-fit: cover;
+    object-position: center;
+}

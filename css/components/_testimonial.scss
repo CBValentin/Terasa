@@ -1,0 +1,43 @@
+.testimonial {
+    width: 70%;
+    margin: 0 auto 6rem;
+
+    background-image: linear-gradient(to right top, rgba($color-whiteCultured, .85), rgba($color-whitePlatinum, .85));
+    box-shadow: 0 3rem 6rem rgba($color-blackChocolate, .4);
+
+    padding: 6rem;
+
+    min-height: 28rem;
+    border-radius: 3px;
+
+    transform: skew(-12deg);
+
+    &>* {
+        transform: skew(12deg);
+    }
+
+    &__shape {
+        width: 16rem;
+        height: 16rem;
+        float: left;
+
+        clip-path: circle(50% at 50% 50%);
+        shape-outside: circle(50% at 50% 50%);
+
+        transform: translateX(-2rem) skew(12deg);
+    }
+
+    &__image {
+        height: 100%;
+        transform: translateX(-4rem);
+    }
+
+    &__caption {
+        text-align: center;
+    }
+
+    &__text {
+        padding-top: 1rem;
+        line-height: 1.7;
+    }
+}
