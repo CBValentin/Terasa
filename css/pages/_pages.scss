@@ -13,6 +13,7 @@
     min-height: 100vh;
 }
 
+
 .section-testimonials {
     min-height: 100vh;
     width: 100%;
@@ -31,4 +32,29 @@
 
     object-fit: cover;
     object-position: center;
+}
+
+
+.section-contact {
+    padding: 15rem 0;
+    background-image: linear-gradient(to right bottom, $color-blueGlaucous, $color-blueIndigo);
+
+    .contact {
+        background-image: linear-gradient(105deg,
+                        rgba(white, .85) 0%,
+                        rgba(white, .65) 30%,
+                        rgba(white, .50) 45%,
+                        transparent 65%)  ,
+                        url(/img/contact.jpg);
+        background-size: cover;
+        background-position: center;
+
+        box-shadow: 0 1rem 4rem rgba($color-blackChocolate, .6);
+        border-radius: 3px;
+
+        &__form {
+            width: 44%;
+            padding: 2rem;
+        }
+    }
 }
