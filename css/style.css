@@ -824,6 +824,61 @@ body {
   opacity: 1;
 }
 
+.pop {
+  width: 100%;
+  min-height: 100vh;
+  background-color: rgba(29, 30, 24, 0.7);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+}
+
+.pop__box {
+  background-color: rgba(255, 255, 255, 0.85);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  -webkit-box-shadow: 0 2.5rem 3rem rgba(29, 30, 24, 0.5);
+          box-shadow: 0 2.5rem 3rem rgba(29, 30, 24, 0.5);
+  border-radius: 3px;
+  display: table;
+  width: 80%;
+  overflow: hidden;
+}
+
+.pop__column-left {
+  display: table-cell;
+  width: 33.333333%;
+}
+
+.pop__image {
+  display: block;
+  width: 100%;
+}
+
+.pop__column-right {
+  display: table-cell;
+  width: 66.666667%;
+  vertical-align: middle;
+  padding: 2rem 4rem;
+}
+
+.pop__text {
+  font-size: 1.6rem;
+  -webkit-column-count: 2;
+          column-count: 2;
+  -webkit-column-gap: 3.5rem;
+          column-gap: 3.5rem;
+  -webkit-column-rule: 1px solid #b8b7b7;
+          column-rule: 1px solid #b8b7b7;
+  -webkit-hyphens: auto;
+      -ms-hyphens: auto;
+          hyphens: auto;
+}
+
 .section-about {
   background-color: #EDF2EF;
 }
@@ -947,5 +1002,67 @@ body {
 
 .about-text {
   padding: 2rem 2rem 16rem;
+}
+
+.footer {
+  background-color: #333;
+}
+
+.footer__logo-box {
+  text-align: center;
+}
+
+.footer__logo {
+  margin: 8rem auto;
+}
+
+.footer__box {
+  padding-bottom: 8rem;
+  border-top: solid 1px #EDF2EF;
+  padding-top: 2rem;
+  width: 80%;
+}
+
+.footer__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.footer__item {
+  list-style-type: none;
+}
+
+.footer__link {
+  color: #EDF2EF;
+  font-size: 1.6rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: .15rem;
+  display: inline-block;
+  -webkit-transition: all .2s ease;
+  transition: all .2s ease;
+}
+
+.footer__link:hover {
+  -webkit-transform: rotate(3deg) scale(1.35);
+          transform: rotate(3deg) scale(1.35);
+  color: #5c80bc;
+  -webkit-box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.5);
+          box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.5);
+  background-color: #333;
+}
+
+.footer__text-box {
+  width: 67%;
+  margin: 0 auto;
+}
+
+.footer__text {
+  color: #EDF2EF;
+  font-size: 1.6rem;
 }
 /*# sourceMappingURL=style.css.map */

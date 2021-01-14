@@ -1,0 +1,53 @@
+.footer {
+    background-color: #333;
+
+    &__logo-box {
+        text-align: center;
+    }
+    &__logo {
+        margin: 8rem auto;
+    }
+
+
+    &__box {
+        padding-bottom: 8rem;
+        border-top: solid 1px $color-whiteCultured;
+        padding-top: 2rem;
+        width: 80%;
+    }
+
+    &__list {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__item {
+        list-style-type: none;
+    }
+    &__link {
+        color: $color-whiteCultured;
+        font-size: 1.6rem;
+        text-transform: uppercase;
+        text-decoration: none;
+        letter-spacing: .15rem;
+
+        display: inline-block;
+
+        transition: all .2s ease;
+
+        &:hover {
+            transform: rotate(3deg) scale(1.35);
+            color: $color-blueGlaucous;
+            box-shadow: 0 1rem 2rem rgba(black, .5);
+            background-color: #333;
+        }
+    }
+
+    &__text-box {
+        width: 67%;
+        margin: 0 auto;
+    }
+    &__text {
+        color: $color-whiteCultured;
+        font-size: 1.6rem;
+    }
+}
