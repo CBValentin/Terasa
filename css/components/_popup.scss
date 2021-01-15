@@ -9,13 +9,18 @@
 
     z-index: 10;
 
+    opacity: 0;
+    visibility: hidden;
+
+    transition: all .35s ease-in-out;
+
     &__box {
-        background-color: rgba(white, .85);
+        background-color: rgba(white, .9);
 
         position: absolute;
         top: 50%;
         left: 50%;
-        transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%) scale(.2);
 
         box-shadow: 0 2.5rem 3rem rgba($color-blackChocolate, .5);
         border-radius: 3px;
@@ -24,6 +29,9 @@
         width: 80%;
 
         overflow: hidden;
+
+        opacity: 0;
+        transition: all .35s ease-in-out;
     }
 
     &__column-left {
@@ -53,5 +61,31 @@
         column-rule: 1px solid rgb(184, 183, 183);
 
         hyphens: auto;
+    }
+
+    &__close {
+        text-decoration: none;
+        font-size: 3rem;
+        color: $color-blackChocolate;
+
+        position: absolute;
+        top: 2.5rem;
+        right: 4rem;
+
+        transition: all .2s ease;
+
+        &:hover {
+            transform: scale(1.4);
+            color: $color-blueGlaucous;
+        }
+    }
+
+    &:target{
+        opacity: 1;
+        visibility: visible;
+    }
+    &:target &__box {
+        opacity: 1;
+        transform: translate(-50%, -50%) scale(1);
     }
 }
