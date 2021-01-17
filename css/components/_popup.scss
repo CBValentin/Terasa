@@ -32,16 +32,36 @@
 
         opacity: 0;
         transition: all .35s ease-in-out;
+
+        @include respond (tab-port) {
+            padding-top: 3rem;
+        }
     }
 
     &__column-left {
         display: table-cell;
         width: 33.333333%;
-        
+
+        @include respond (laptop-lg) {
+            height: 100%;
+        }
+
+        @include respond (tab-land) {
+            display: none;
+            width: 0%;
+        }
     }
     &__image {
         display: block;
         width: 100%;
+
+        @include respond (laptop-lg) {
+            height: auto;
+        }
+        @include respond (tab-land) {
+            display: none;
+            visibility: hidden;
+        }
     }
 
     &__column-right {
@@ -50,6 +70,13 @@
 
         vertical-align: middle;
         padding: 2rem 4rem;
+
+        @include respond (tab-land) {
+            width: 100%;
+        }
+        @include respond (tab-port) {
+            text-align: center;
+        }
     }
 
 
@@ -61,6 +88,10 @@
         column-rule: 1px solid rgb(184, 183, 183);
 
         hyphens: auto;
+
+        @include respond (laptop-sm) {
+            font-size: 1.5rem;   
+        }
     }
 
     &__close {

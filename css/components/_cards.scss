@@ -22,7 +22,7 @@
     }
 
     @include respond (mobile-md) {
-        width: 54%;
+        width: 60%;
     }
 
     &__side {
@@ -184,6 +184,10 @@
 
         color: $color-whiteCultured;
 
+        @include respond (laptop-lg) {
+            width: 100%;
+        }
+
         &--only {
             font-size: 2.5rem;
             padding-bottom: 2rem;
@@ -194,6 +198,19 @@
 
             sup {
                 font-size: 3rem;
+                @include respond (laptop-lg) {
+                    font-size: 2rem;
+                }
+                @include respond (tab-land) {
+                    font-size: 1.75rem;
+                }
+            }
+
+            @include respond (laptop-lg) {
+                font-size: 4rem;
+            }
+            @include respond (tab-land) {
+                font-size: 3.5rem;
             }
         }
     }
