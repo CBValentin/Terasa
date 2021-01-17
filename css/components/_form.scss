@@ -1,5 +1,9 @@
 .form {
 
+    @include respond (tab-port) {
+        padding-top: 3rem;
+    }
+
     &__box {
         padding: 1rem;
 
@@ -7,6 +11,11 @@
 
         &:not(:last-child) {
             margin-bottom: 1rem;
+        }
+
+        @include respond (laptop-sm) {
+            width: 100%;
+            text-align: center;
         }
     }
 
@@ -25,6 +34,10 @@
         transition: all .25s ease;
 
         border-bottom: solid 3px transparent;
+
+        @include respond (laptop-sm) {
+            width: 100%;
+        }
 
         &::placeholder {
             color: $color-blackChocolate;
@@ -71,6 +84,13 @@
         width: 40%;
 
         margin-bottom: 2rem;
+
+        @include respond(desktop) {
+            width: 100%;
+            &:first-child {
+                padding-bottom: 2rem;
+            }
+        }
 
         &--input {
             display: none;

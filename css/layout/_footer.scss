@@ -6,6 +6,24 @@
     }
     &__logo {
         margin: 8rem auto;
+
+        @include respond (laptop-sm) {
+            width: 12rem;
+            height: 24rem;
+            margin: 4rem auto; 
+        }
+        @include respond (tab-land) {
+            width: 10rem;
+            height: 20rem;
+        }
+        @include respond (mobile-lg) {
+            width: 8rem;
+            height: 16rem;
+        }
+        @include respond (mobile-md) {
+            width: 7rem;
+            height: 14rem;
+        }
     }
 
 
@@ -14,6 +32,15 @@
         border-top: solid 1px $color-whiteCultured;
         padding-top: 2rem;
         width: 80%;
+
+        @include respond (tab-land) {
+            padding-bottom: 5rem;
+            width: 70%;
+            margin: 0 auto;
+        }
+        @include respond (mobile-md) {
+            width: 90%;
+        }
     }
 
     &__list {
@@ -34,6 +61,11 @@
 
         transition: all .2s ease;
 
+        @include respond (laptop-sm) {
+            letter-spacing: .05rem;
+            font-weight: 300;
+        }
+
         &:hover {
             transform: rotate(3deg) scale(1.35);
             color: $color-blueGlaucous;
@@ -45,9 +77,22 @@
     &__text-box {
         width: 67%;
         margin: 0 auto;
+
+        hyphens: auto;
+
+        @include respond (tab-land) {
+            width: 45%;
+        }
+        @include respond (mobile-md) {
+            width: 55%;
+        }
     }
     &__text {
         color: $color-whiteCultured;
         font-size: 1.6rem;
+
+        @include respond (laptop-sm) {
+            font-weight: 300;
+        }
     }
 }

@@ -1,10 +1,12 @@
 .header {
     height: 100vh;
-    background-image: linear-gradient(to right top, rgba(92, 128, 188, .6),  rgba(8, 65, 92, .6)), url(/img/home.jpg);
+    background-image: linear-gradient(to right top, rgba(92, 128, 188, .6),  rgba(8, 65, 92, .6)), url(../img/home.jpg);
     background-size: cover;
     background-position: bottom;
     background-attachment: fixed;
     position: relative;
+
+    animation-fill-mode: backwards;
 
     &__logo-box {
         position: absolute;

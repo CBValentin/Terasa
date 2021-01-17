@@ -1,15 +1,6 @@
 .button-main {
-    text-decoration: none;
-    text-transform: uppercase;
-    font-size: 2.5rem;
-    padding: 1.5rem 3.5rem;
-    border-radius: 1rem;
-    letter-spacing: .35rem;
-    cursor: pointer;
-    display: inline-block;
-
-    transition: all .35s ease;
-
+    
+    &,
     &:link,
     &:visited {
     text-decoration: none;
@@ -22,6 +13,14 @@
     display: inline-block;
 
     transition: all .35s ease;
+
+        @include respond (tab-land) {
+            font-size: 2rem;
+        }
+
+        @include respond (tab-port) {
+            font-size: 1.8rem;
+        }
     }
 
     &__home {

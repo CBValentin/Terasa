@@ -10,6 +10,22 @@
     width: 80%;
     margin: 25% auto 25%;
 
+    @include respond (tab-land) {
+        height: 40rem;
+    }
+
+    @include respond (tab-port) {
+        margin: 18% auto 0;
+        height: 33rem;
+        width: 70%;
+        padding: 4rem 2rem;
+    }
+
+    @include respond (mobile-lg) {
+        width: 70%;
+        margin: 18% auto 0;
+    }
+
     &__icon {
         font-size: 8rem;
         @include text-color-clip;
@@ -20,6 +36,16 @@
         font-size: 1.8rem;
         line-height: 1.6;
         letter-spacing: .06rem;
+
+        @include respond (laptop-lg) {
+            font-size: 1.6rem;
+        }
+        @include respond (tab-land) {
+            font-size: 1.4rem;
+        }
+        @include respond (mobile-lg) {
+            font-size: 1.6rem;
+        }
     }
 
     &:hover {

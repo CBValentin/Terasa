@@ -1,9 +1,17 @@
 .section-about {
     background-color: $color-whiteCultured;
+
+    @include respond (tab-land) {
+        height: 98rem;
+    }
+
+    @include respond (tab-port) {
+        height: fit-content;
+    }
 }
 
 .section-features {
-    background-image: linear-gradient(to right top, rgba(92, 128, 188, .6),  rgba(8, 65, 92, .6)), url(/img/features.jpg);
+    background-image: linear-gradient(to right top, rgba(92, 128, 188, .6),  rgba(8, 65, 92, .6)), url(../img/features.jpg);
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -45,7 +53,7 @@
                         rgba(white, .65) 30%,
                         rgba(white, .50) 45%,
                         transparent 65%)  ,
-                        url(/img/contact.jpg);
+                        url(../img/contact.jpg);
         background-size: cover;
         background-position: center;
 
@@ -55,9 +63,39 @@
         width: 80%;
         margin: 0 auto;
 
+        @include respond (laptop-sm) {
+            background-image: linear-gradient(to right top, 
+                                        rgba(white, .4) 0%,
+                                        rgba(white, .6) 25%,
+                                        rgba(white, .78) 45%, 
+                                        rgba(white, .9) 65%), 
+                                        url(../img/contact.jpg);
+            width: 65%;
+        }
+
+        @include respond (tab-land) {
+            width: 70%;
+        }
+        @include respond (mobile-md) {
+            width: 80%;
+        }
+
         &__form {
             width: 60%;
             padding: 4rem;
+
+            @include respond (laptop-sm) {
+                width: 70%;
+                margin: 0 auto; 
+            }
+            @include respond (tab-land) {
+                width: 75%;
+            }
+            @include respond (mobile-md) {
+                width: 90%;
+                padding: 2rem;
+            }
+            
         }
     }
 }
